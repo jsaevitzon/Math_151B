@@ -1,0 +1,62 @@
+Name: Jaryd Saevitzon
+ID: 004255295
+
+
+README:
+
+All files are seperated into  a cpp file and header file. The files are:
+
+Actual.cpp/h : contains the exact solution for y
+
+euler.cpp/h  : contains the implementation and definition of euler method
+
+rk4.cpp/h    : contains	the implementation and definition of Rung-Kutta  method
+
+amb4.cpp/h   : contains the implementation and definition of adams predictor  method
+
+ms.cpp/h     :contains	the implementation and definition of milne simpson method
+
+function.cpp/h : contains   the implementation of the differential equation function  method
+
+main.cpp  : contains the way to implement all methods
+
+Makefile  : contains the way to build and run all functions
+
+Adam_PC.png : graph for adams method
+Euler.png   : graph for Euler method
+mil_simp.png: graph for mil_simp method
+Rung.png    : graph for rung-kutta method
+
+graphs.gp : gnuplot directions to build the graphs.
+
+
+How to build:
+ Use makefile. Args are:
+     make : builds all files to a target main. Can run main by ./main
+     
+         ./main takes args:
+     	    ./main "euler": to run euler method
+	    ./main "rk4"  : to run rung kutta
+	    ./main "amb4" : to run adams method
+	    ./main "ms"   : to run milne simp method
+	    ./main "solution" : to run the actual solution
+
+     rk4: builds and runs rk4. Outputs to rk4.csv
+     euler: builds and runs euller, outputs to euler.csv
+     amb4:  builds and runs adams, outputs to amb4.csv
+     ms  :  builds and runs milne simp, outputs to ms.csv
+     actual: builds and runs solution, outputs to sol.csv
+     all: builds and runs all of the above
+     
+     graphs: builds all of the above and outputs the graphs (.png listed above)
+
+     dist: does all of the above. Builds a zipe file of every file listed.
+      
+
+      
+
+Questions:
+	Eulers method is unstable for h=.125, .2. Converges for others.
+	Adams converges for all but h=.2
+	mil_simp is incredibly unstable. Does not converge at all.
+	Rung kutta converges for all but h=.2. Clearly stable for h <= .125.

@@ -1,0 +1,8 @@
+When h=10
+max difference is: 415.787 and occurs at t = 30
+
+When h=1
+ max difference is: 29.9739 and occurs at t = 6
+
+When h=.1
+ max difference is: 2.88936 and occurs at t = 5
